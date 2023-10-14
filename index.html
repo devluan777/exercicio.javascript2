@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Contatos</title>
+    <link rel="stylesheet" type="text/css" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
+    </head>
+<body>
+    <div id="container">
+        <h1>Lista de Contatos</h1>
+
+        <form id="contact-form">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" pattern="[A-Za-z\s]+" title="Somente letras e espaços são permitidos" placeholder="Digite seu Nome" required>
+            <label for="phone">Telefone:</label>
+            <input type="text" id="phone" placeholder="Digite seu numero" required>
+            <button type="button" id="add-contact">Cadastrar</button>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Telefone</th>
+                </tr>
+            </thead>
+            <tbody id="contact-list">
+            </tbody>
+        </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
+
+
+
